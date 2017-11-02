@@ -1,9 +1,9 @@
 % Premier script projet final
 
 % Constantes
-St = 0.01;
+St = 0.1;
 deltat = 0.01;
-N = 400;
+N = 500;
 P = 100;
 
 % Conditions initiales particules

@@ -2,16 +2,25 @@ program taylor_green
 
     implicit none
     
-    real, parameter :: St=0.1, deltat=0.01, Pi = 3.1415927
-    integer, parameter :: N=100, P=100, nb_part_alltime=10, nb_outputs_allpart=10
-    real :: tps
-    double precision, dimension(N,P) :: X,Y,U,V
+    real, parameter :: Pi=3.1415927
+    real :: St, deltat
+    integer :: N, P, nb_part_alltime, nb_outputs_allpart, i,j,k,part
+    double precision, dimension(:,:), allocatable :: X,Y,U,V
     double precision :: Ug, Vg
-    double precision, dimension(nb_part_alltime) :: rand_part
-    integer :: i,j,k,part
+    double precision, dimension(:), allocatable :: rand_part
     character(len=1024) :: filenameX_all, filenameY_all, filenameU_all, filenameV_all
     character(len=1024) :: filenameX_some, filenameY_some, filenameU_some, filenameV_some
     
+    open(unit=31, file="params.txt",form='formatted')
+    read(31,*) St, deltat
+    read(31,*) N, P, nb_part_alltime, nb_outputs_allpart
+    
+    allocate(X(N,P))
+    allocate(Y(N,P))
+    allocate(U(N,P))
+    allocate(V(N,P))
+    allocate(rand_part(nb_part_alltime))
+
     write (filenameX_all, '("output_X_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
     int(1000*St),P,int(N*deltat),int(1000*deltat)
     write (filenameY_all, '("output_Y_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
