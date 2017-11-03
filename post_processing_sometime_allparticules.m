@@ -1,11 +1,11 @@
-UlowSt = load('outputs\output_U_St  10_P    500_Tf  7_dt 10sometime.txt');
-VlowSt = load('outputs\output_V_St  10_P    500_Tf  7_dt 10sometime.txt');
-XlowSt = load('outputs\output_X_St  10_P    500_Tf  7_dt 10sometime.txt');
-YlowSt = load('outputs\output_Y_St  10_P    500_Tf  7_dt 10sometime.txt');
-UhighSt = load('outputs\output_U_St 100_P    500_Tf  7_dt 10sometime.txt');
-VhighSt = load('outputs\output_V_St 100_P    500_Tf  7_dt 10sometime.txt');
-XhighSt = load('outputs\output_X_St 100_P    500_Tf  7_dt 10sometime.txt');
-YhighSt = load('outputs\output_Y_St 100_P    500_Tf  7_dt 10sometime.txt');
+UlowSt = load('outputs/output_U_St  10_P    500_Tf  7_dt 10sometime.txt');
+VlowSt = load('outputs/output_V_St  10_P    500_Tf  7_dt 10sometime.txt');
+XlowSt = load('outputs/output_X_St  10_P    500_Tf  7_dt 10sometime.txt');
+YlowSt = load('outputs/output_Y_St  10_P    500_Tf  7_dt 10sometime.txt');
+UhighSt = load('outputs/output_U_St 100_P    500_Tf  7_dt 10sometime.txt');
+VhighSt = load('outputs/output_V_St 100_P    500_Tf  7_dt 10sometime.txt');
+XhighSt = load('outputs/output_X_St 100_P    500_Tf  7_dt 10sometime.txt');
+YhighSt = load('outputs/output_Y_St 100_P    500_Tf  7_dt 10sometime.txt');
 [N,P] = size(UlowSt);
 
 
