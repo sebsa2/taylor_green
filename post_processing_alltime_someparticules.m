@@ -8,6 +8,12 @@ XhighSt = load('outputs\output_X_St 100_P    500_Tf  7_dt 10alltime.txt');
 YhighSt = load('outputs\output_Y_St 100_P    500_Tf  7_dt 10alltime.txt');
 [N,P] = size(UlowSt);
 
+red_part = {};
+blue_part = {};
+green_part = {};
+yellow_part{};
+for p=1:P
+    
 
 figure('Name','Evolution position particules St=0.01')
 for p=1:P
