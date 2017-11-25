@@ -21,21 +21,21 @@ program taylor_green
     allocate(V(N,P))
     allocate(rand_part(nb_part_alltime))
 
-    write (filenameX_all, '("output_X_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
+    write (filenameX_all, '("output_X_St",I5,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
     int(1000*St),P,int(N*deltat),int(1000*deltat)
-    write (filenameY_all, '("output_Y_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
+    write (filenameY_all, '("output_Y_St",I5,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
     int(1000*St),P,int(N*deltat),int(1000*deltat)
-    write (filenameU_all, '("output_U_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
+    write (filenameU_all, '("output_U_St",I5,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
     int(1000*St),P,int(N*deltat),int(1000*deltat)
-    write (filenameV_all, '("output_V_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
+    write (filenameV_all, '("output_V_St",I5,"_P",I7,"_Tf",I3,"_dt",I3,"alltime.txt")' )&
     int(1000*St),P,int(N*deltat),int(1000*deltat)
-    write (filenameX_some, '("output_X_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"sometime.txt")' )&
+    write (filenameX_some, '("output_X_St",I5,"_P",I7,"_Tf",I3,"_dt",I3,"sometime.txt")' )&
     int(1000*St),P,int(N*deltat),int(1000*deltat)
-    write (filenameY_some, '("output_Y_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"sometime.txt")' )&
+    write (filenameY_some, '("output_Y_St",I5,"_P",I7,"_Tf",I3,"_dt",I3,"sometime.txt")' )&
     int(1000*St),P,int(N*deltat),int(1000*deltat)
-    write (filenameU_some, '("output_U_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"sometime.txt")' )&
+    write (filenameU_some, '("output_U_St",I5,"_P",I7,"_Tf",I3,"_dt",I3,"sometime.txt")' )&
     int(1000*St),P,int(N*deltat),int(1000*deltat)
-    write (filenameV_some, '("output_V_St",I4,"_P",I7,"_Tf",I3,"_dt",I3,"sometime.txt")' )&
+    write (filenameV_some, '("output_V_St",I5,"_P",I7,"_Tf",I3,"_dt",I3,"sometime.txt")' )&
     int(1000*St),P,int(N*deltat),int(1000*deltat)
     
     open (unit=11, file=filenameX_all)

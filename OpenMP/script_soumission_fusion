@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#PBS -S /bin/bash
+#PBS -P energy
+#PBS -N job_taylor_green
+#PBS -o outputTaylorGreen.txt
+#PBS -j oe
+#PBS -q haswellq
+#PBS -l walltime=00:30:00
+#PBS -l select=1:ncpus=6
+
+cd $PBS_O_WORKDIR
+
+module purge
+module load intel-compiler/15.0.1
+
+export OMP_NUM_THREADS=6
+
+./taylor_green_parallel.out

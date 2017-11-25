@@ -1,3 +1,3 @@
-0.01 0.01 #Stokes and Deltat
+10 0.01 #Stokes and Deltat
 700 500 10 10 #Number of iterations, Number of particules, Number of particules to follow, Number of outputs with all the particules
 
