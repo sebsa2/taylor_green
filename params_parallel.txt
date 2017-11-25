@@ -1,0 +1,4 @@
+0.01 0.01 #Stokes and Deltat
+
+700 500 100 10 #Number of iterations, Number of particules, Density matrix size, Number of density matrix outputs 
+
